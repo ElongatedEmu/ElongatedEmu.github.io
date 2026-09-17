@@ -1,0 +1,162 @@
+AI USEAGE DISCLOSURE LLM USED CHATGPT PREMIUM:
+
+PROMPT 1:
+
+Create me a CSS file that formats any HTML file linked to it to follow this general shape on the paper, I want the header field up top of color #EEEEEE, that takes up 50 pixels of the to screen and whose text inside is of 36 point Arial font and black. I want the body of every text to be on a white background of 14 point Arial font and black. I want a nav section on the side of size 200 pixels whose hyperlinks are of #000000 color and has background color #AAAAAA, regular text in the nav section is to be of color #EEEEEE. ALL TEXT IS TO BE OF 14 POINT FONT
+
+I also included a photo of the sketch of what the layout of the header nav bar and footer should look like:
+
+OUTPUT:
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+}
+
+/* Top header */
+header {
+    height: 50px;
+    background-color: #EEEEEE;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 36pt;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Left-side navigation */
+nav {
+    width: 200px;
+    min-height: calc(100vh - 50px);
+    background-color: #AAAAAA;
+    color: #EEEEEE;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+
+    float: left;
+    padding: 15px;
+}
+
+/* Navigation links */
+nav a {
+    color: #000000;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Makes vertically stacked navigation lists clean */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+/* Main page content */
+main {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+}
+
+/* Keep normal text elements consistent */
+p,
+div,
+section,
+article,
+aside,
+footer,
+li {
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+}
+
+
+After having issues getting the footer to appear at the bottom of the page I prompted for help getting it to appear to which it appeneded
+
+footer {
+    height: 50px;
+    background-color: #AAAAAA;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Keeps the footer at the bottom when content is short */
+    margin-top: auto;
+
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
+
+to the css file.
+
+
+Later on in the assignment I removed:
+
+
+ /* Navigation links */
+nav a {
+    color: #000000;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Makes vertically stacked navigation lists clean */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+Since this was all overridden by implementing bootstrap!
+
+
+
+PROMPT 2:
+
+In the hobbies.html file provided use Bootstrap to make the cards responsive when being hovered over. Try giving the cards the appearance of sinking when hovered over
+
+response:
+hobbies(1).html
+
+I thought the implementation overall looked really and it was mobile friendly. So props there. I changed nothing with the implementation, I did hide the link to it in hobbies.html however since I liked the work that I did on the original hobbies.html and didn't want to see it get totally overridden.
+
+
+

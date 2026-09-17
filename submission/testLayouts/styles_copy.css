@@ -1,0 +1,100 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+/* Header */
+header {
+    height: 50px;
+    background-color: #EEEEEE;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 36pt;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+/* Navigation sidebar */
+nav {
+    width: 140px;
+    background-color: #AAAAAA;
+    color: #EEEEEE;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    padding: 15px;
+
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* Main page content */
+main {
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Footer */
+footer {
+    height: 50px;
+    background-color: #EEEEEE;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: auto;
+
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
+
+.card{
+  background-color: #FAFAFA;
+  width: 80%;
+  padding: 1%;
+  box-shadow: 10px 5px 5px rgb(98, 98, 98);
+}
+
+/* Keep regular page text consistent */
+p,
+div,
+section,
+article,
+aside,
+footer,
+li {
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+}
